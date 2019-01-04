@@ -19,13 +19,6 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/2.1/howto/deployment/checklist/
 
-# SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'z)6+@p2ak0kb45yhs8&5jzh_&vy#4n$cn9i^ufb30*v5&hiu7n'
-
-# SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
-
-ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -144,14 +137,12 @@ MESSAGE_TAGS = {
     messages.ERROR:'danger'
 }
 
-#Email Config
-EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_PORT = 587
-EMAIL_HOST_USER = 'ndemo.kelvin@students.jkuat.ac.ke'
-EMAIL_HOST_PASSWORD = 'onkundikevo'
-EMAIL_USE_TLS=True
+
 
 try:
     from .local_settings import *
 except ImportError:
     pass
+
+
+
