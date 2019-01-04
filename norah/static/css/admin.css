@@ -1,0 +1,39 @@
+#header{
+    width: auto;
+    height: 40px;
+    padding: 10px 40px;
+    background: #0a15b8;
+    line-height: 40px;
+    color:white;
+    overflow: hidden
+}
+#branding h1{
+    color: #fff;
+}
+
+a:link,
+a:visited{
+    color: #0a15b8;
+}
+
+div.breadcrumbs{
+    background: #30caa0;
+    color: rgb(84, 27, 189);
+}
+div.breadcrumbs a {
+    color: rgb(70, 65, 65);
+}
+
+div.breadcrumbs a:active{
+    color: black;
+}
+.module h2, .module caption, .inline-group h2{
+    background:green;
+}
+.button.default, input[type=submit].default, .submit-row input.default {
+    background: green;
+}
+.button, input[type=submit], input[type=button], .submit-row input, a.button {
+ background: seagreen;
+}
+
