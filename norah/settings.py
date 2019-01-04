@@ -146,14 +146,6 @@ MESSAGE_TAGS = {
     messages.ERROR:'danger'
 }
 
-#Email Config
-EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_PORT = 587
-EMAIL_HOST_USER = 'ndemo.kelvin@students.jkuat.ac.ke'
-EMAIL_HOST_PASSWORD = 'onkundikevo'
-EMAIL_USE_TLS=True
-
-
 
 try:
     from .local_settings import *
