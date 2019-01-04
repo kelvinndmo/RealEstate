@@ -150,3 +150,8 @@ EMAIL_PORT = 587
 EMAIL_HOST_USER = 'ndemo.kelvin@students.jkuat.ac.ke'
 EMAIL_HOST_PASSWORD = 'onkundikevo'
 EMAIL_USE_TLS=True
+
+try:
+    from .local_settings import *
+except ImportError:
+    pass
