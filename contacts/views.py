@@ -6,6 +6,8 @@ from django.core.mail import send_mail
 
 from .models import Contact
 
+from django.contrib.auth.models import User
+
 
 def contact(request):
     if request.method == 'POST':
@@ -38,6 +40,14 @@ def contact(request):
                 [realtor_email, 'ndemokelvinonkundi@gmail.com','ndemokelvin254@gmail.com','onkundipol@yahoo.com'],
                 fail_silently=True
             )
+            send_mail(
+                'Property Inquiry',
+                'We will normally just iterate it like any other Iterable: using a for-loop. However, given non-trivial conditions for the end of the loop, or for its continuation, we may end up in a situation where we’d like to iterate it manually. To do this, we will just call the next method (Python 2) or function (Python 3) until it throws a StopIteration exception. Note that the time taken for generating each element individually on retrieval will end up adding up to take as much as the time for initializing the whole list in a non-lazy manner. Finally, given a Generator, we can always cast it into a plain old non-lazy list by calling list(our_generator), paying the whole initialization cost.',
+                'ndemo.kelvin@students.jkuat.ac.ke',
+                [request.user.email],
+                fail_silently=True
+            )
+
 
             messages.success(request, "Your form has been submitted and a realtor will get back to you!!")
 
