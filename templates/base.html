@@ -1,38 +1,34 @@
 {% load static %}
 <!DOCTYPE html>
 <html>
-
-<head>
+  <head>
     <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Novak Houses {%block title %} 
-        {%endblock%}</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="description"
+      content="This is for customer looking for houses to buy and rent in kenya, Nairobi Mombasa Eldoret Kisii"
+    />
+    <title>Kenya Houses {%block title %} {%endblock%}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="{% static 'css/all.css' %}">
+    <link rel="stylesheet" href="{% static 'css/all.css' %}" />
     <!-- Bootstrap -->
-    <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}" />
     <!-- Custom -->
-    <link rel="stylesheet" href="{% static 'css/style.css' %}">
-</head>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+  </head>
 
-<body>
+  <body>
     <!-- topbar -->
     {% include 'partials/_topbar.html'%}
     <!-- navbar  -->
-    {% include 'partials/_navbar.html'%}
-    
-            
-             
-    {% block content %}
-    {% endblock %}
+    {% include 'partials/_navbar.html'%} {% block content %} {% endblock %}
 
     <!-- footer -->
     {% include 'partials/_footer.html'%}
-    
+
     <script src="{% static 'js/jquery-3.3.1.min.js' %}"></script>
     <script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
     <script src="{% static 'js/main.js'%}"></script>
-</body>
-
+  </body>
 </html>
